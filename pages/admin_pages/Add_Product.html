@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Product - LuxeLiving Admin</title>
+    <link rel="stylesheet" href="../../css/admin_styles.css">
+</head>
+<body>
+    <div class="sidebar">
+        <img src="../../images/HD1.jpg" alt="Profile Image">
+        <h2>LuxeLiving Admin</h2>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="Profile_Management.html">Profile Management</a>
+        <a href="Product_Management.html" class="active">Product Management</a>
+        <a href="#">User Management</a>
+        <a href="#">Order Management</a>
+        <a href="#">FAQ Management</a>
+    </div>
+
+    <div class="content">
+        <h1>Add New Product</h1>
+        <form id="add-product-form">
+            <label for="product-id">Product ID:</label>
+            <input type="text" id="product-id" name="product-id" required>
+
+            <label for="product-name">Product Name:</label>
+            <input type="text" id="product-name" name="product-name" required>
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" required></textarea>
+
+            <label for="price">Price:</label>
+            <input type="text" id="price" name="price" required>
+
+            <label for="stock">Stock:</label>
+            <input type="text" id="stock" name="stock" required>
+
+            <button type="submit" class="save-btn">Save</button>
+        </form>
+        <button onclick="window.location.href='view-items.html'">View Items</button>
+    </div>
+
+    <script src="../../js/admin_scripts.js"></script>
+</body>
+</html>
